@@ -1,5 +1,4 @@
-import discord, datetime, asyncio, random #discord, datetime 모듈 불러오기
-token = 'ODg1MDU2MTg0NTI3MjUzNTE1.YThezQ.PzJYfMH354sC257o7e7YsEmyvfU' #token 변수 설정
+import discord, datetime, asyncio, random, os #discord, datetime 모듈 불러오기
 client = discord.Client() #client 설정
 
 @client.event
@@ -24,5 +23,5 @@ async def on_message(message):
     embed.set_footer(text=message.author, icon_url=message.author.avatar_url)
     await message.channel.send(embed=embed)
   
-
-client.run(token) #token으로 봇을 실행한다
+access token = os.environ["BOT_TOKEN"]
+client.run(access_token) #token으로 봇을 실행한다
