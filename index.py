@@ -1,4 +1,4 @@
-import discord, datetime, asyncio, random, os #discord, datetime 모듈 불러오기
+import discord, datetime, asyncio, random2, os #discord, datetime 모듈 불러오기
 client = discord.Client() #client 설정
 
 @client.event
