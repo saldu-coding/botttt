@@ -3,3 +3,5 @@ discord.py==0.16.12
 asyncio
 
 random2
+
+os
