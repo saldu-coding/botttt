@@ -23,5 +23,5 @@ async def on_message(message):
     embed.set_footer(text=message.author, icon_url=message.author.avatar_url)
     await message.channel.send(embed=embed)
   
-access token = os.environ["BOT_TOKEN"]
+access token = os.environ['BOT_TOKEN']
 client.run(access_token) #token으로 봇을 실행한다
